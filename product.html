@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Computer Tech Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Computer Tech Shop</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section id="products" class="section">
+        <h1>Our Products</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Laptop">
+                <h3 class="product-name">Laptop</h3>
+                <p class="product-price">$500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Monitor">
+                <h3 class="product-name">Monitor</h3>
+                <p class="product-price">$150</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Mouse</h3>
+                <p class="product-price">$20</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Keyboard</h3>
+                <p class="product-price">$200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/18236754/pexels-photo-18236754/free-photo-of-jabra-elite-85t-wireless-bluetooth.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Earpod</h3>
+                <p class="product-price">$30</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Mobile</h3>
+                <p class="product-price">$500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/815494/pexels-photo-815494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Headphone</h3>
+                <p class="product-price">$60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/3541555/pexels-photo-3541555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Ccable</h3>
+                <p class="product-price">$10</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/914912/pexels-photo-914912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Charger</h3>
+                <p class="product-price">$19</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://img.drz.lazcdn.com/static/np/p/aa349642d387158df471654ce7a776c1.jpg_720x720q80.jpg" alt="Mouse">
+                <h3 class="product-name">VR Box</h3>
+                <p class="product-price">$100</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/2861929/pexels-photo-2861929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Smartwatch</h3>
+                <p class="product-price">$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1670768/pexels-photo-1670768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mouse">
+                <h3 class="product-name">Phone Case</h3>
+                <p class="product-price">$7</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="cart" class="section">
+        <h2>Your Cart</h2>
+        <div class="cart-items"></div>
+        <div class="cart-summary">
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+    </section>
+
+    <div id="checkout-success" class="modal hidden">
+        <div class="modal-content">
+            <h2>Checkout Successful!</h2>
+            <p>Thank you for your purchase.</p>
+            <button id="close-modal" class="btn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
